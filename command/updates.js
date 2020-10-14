@@ -175,7 +175,7 @@ function handleMangaChapterResult(latestChapter) {
     })
 }
 
-function handleMangaNewsResult(latestNews) {
+/* function handleMangaNewsResult(latestNews) {
     latestNews.forEach(function(item) {
         firebase.database().ref(DB_MANGANEWS + item.id).once('value').then(function(snapshot) {
             if (!snapshot.val()) {
@@ -239,7 +239,7 @@ function handleAnimeNewsResult(latestNews) {
             sendLog(err)
         })
     })
-}
+} */
 
 function sendLog(content) {
     console.log(content)
