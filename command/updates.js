@@ -8,7 +8,7 @@ let methods = {}
 let botClient = null
 let firebase = null
 
-let cron = new CronJob('*/1 * * * *', doScraping, null, false, 'UTC')
+let cron = new CronJob('*/15 * * * *', doScraping, null, false, 'UTC')
 
 const MANGADEX_URL = 'https://mangadex.org/title/31477/solo-leveling'
 const ANNMANGA_URL = 'https://www.animenewsnetwork.com/encyclopedia/manga.php?id=21269'
