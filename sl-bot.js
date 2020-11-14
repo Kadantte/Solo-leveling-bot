@@ -1,3 +1,11 @@
+// ================= EXP CODE ===================
+const express = require('express')
+const app = express()
+const port = 3000
+
+// ================= EXP CODE ===================
+// ================= BOT CODE ===================
+
 require('dotenv').config()
 
 let path = require('path')
@@ -138,3 +146,11 @@ function hasAccess(msg) {
 }
 
 client.login(process.env.BOT_TOKEN)
+
+// ================= BOT CODE ===================
+// ================= EXP CODE ===================
+
+app.get('/', (req, res) => res.send('Bot is running!'))
+app.listen(port, () => console.log(`Bot is listening at http://localhost:${port}`))
+
+// ================= EXP CODE ===================
