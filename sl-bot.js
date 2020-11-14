@@ -18,13 +18,14 @@ let updates = requireFile('updates.js')
 let reaction = requireFile('reaction.js')
 let anime = requireFile('anime.js')
 let manga = requireFile('manga.js')
+let dev = requireFile('developer.js')
 let link = requireFile('link.js')
 let images = requireFile('images.js')
 let about = requireFile('about.js')
 
 let client = new discord.Client()
 
-const PREFIX = 'sl-'
+const PREFIX = 'sld-'
 
 const cmd = {
     START: 'start',
@@ -32,6 +33,7 @@ const cmd = {
     RERUN: 'rerun',
     ANIME: 'anime',
     MANGA: 'manga',
+    DEV: 'dev',
     LINK: 'link',
     MIKUSAY: 'mikusay',
     CLAIMHUG: 'claimhug',
@@ -45,9 +47,11 @@ firebase.initializeApp(firebaseConfig)
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`)
     client.user.setPresence({
+        status: "dnd",
         game: {
-            name: 'sl-about',
-            type: 'LISTENING'
+            name: 'Riot Games',
+            type: 'STREAMING',
+            url: 'https://www.twitch.tv/riotgames'
         }
     })
 })
@@ -97,6 +101,10 @@ function checkCommand(client, msg) {
 
         case cmd.MANGA:
             manga.showMangaInfo(msg)
+            break
+        
+        case cmd.DEV:
+            dev.showdeveloperInfo(msg)
             break
 
         case cmd.LINK:

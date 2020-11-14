@@ -6,7 +6,7 @@
 
 Discord bot to spread [Solo Leveling](https://myanimelist.net/manga/121496/Solo_Leveling) propaganda.
 
-## Features
+## Features Informing when a new chapter is released
 - Informing when a new chapter is released.
 - Informing when there are news about Cinnamon Rolls.
 - That's it.
