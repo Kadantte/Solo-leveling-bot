@@ -33,7 +33,7 @@ let about = requireFile('about.js')
 
 let client = new discord.Client()
 
-const PREFIX = 'sld-'
+const PREFIX = 'sl-'
 
 const cmd = {
     START: 'start',
