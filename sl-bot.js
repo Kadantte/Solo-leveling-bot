@@ -55,14 +55,25 @@ firebase.initializeApp(firebaseConfig)
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag}!`)
     client.user.setPresence({
-        status: "dnd",
+        status: "idle",
         game: {
-            name: 'Riot Games',
-            type: 'STREAMING',
-            url: 'https://www.twitch.tv/riotgames'
+            name: 'Solo Leveling',
+            type: 'LISTENING'
         }
     })
 })
+
+// client.on('ready', () => {
+   // console.log(`Logged in as ${client.user.tag}!`)
+   // client.user.setPresence({
+       // status: "dnd",
+      //  game: {
+           // name: 'Riot Games',
+         //   type: 'STREAMING',
+       //     url: 'https://www.twitch.tv/riotgames'
+     //   }
+   // })
+// })
 
 client.on('message', msg => {
     if (msg.content.startsWith(PREFIX)) {
