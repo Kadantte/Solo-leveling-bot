@@ -157,7 +157,7 @@ function handleMangaChapterResult(latestChapter) {
                 for (key in result) {
                     try {
                         let subscribedChannel = botClient.channels.get(result[key].channel_id)
-                        subscribedChannel.send('New chapter of the best manga in the world is out!' + 
+                        subscribedChannel.send('<@&780523421477109760> New chapter of the best manga in the world is out!' + 
                             '\nRead Chapter ' + latestChapter.chapter +' here: ' + 
                             'https://mangadex.org/chapter/' + latestChapter.id + '/1')
                     } catch (ex) {
