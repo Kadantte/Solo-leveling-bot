@@ -5,7 +5,7 @@
     "main": "sl-bot.js",
     "author": "Jae Jin",
     "scripts": {
-        "start": "node sl-bot.js",
+        "start": "node index.js",
         "dev": "nodemon sl-bot.js"
     },
     "dependencies": {
