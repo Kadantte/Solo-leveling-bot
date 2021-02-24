@@ -34,7 +34,13 @@ let about = requireFile('about.js')
 let client = new discord.Client()
 
 const PREFIX = 'sl-'
-
+function envArray (name) {
+    const value = process.env[name]
+    if (!value) {
+      return null
+    }
+    return value.split(',').map(s => s.trim())
+  }
 const cmd = {
     START: 'start',
     STOP: 'stop',
@@ -149,7 +155,7 @@ function checkCommand(client, msg) {
 }
 
 function hasAccess(msg) {
-    if (msg.author.id != process.env.OWNER) {
+    if (msg.author.id != envArray('OWNERS')) {
         msg.channel.send('Some things are just not meant to be.')
         return false
     }
