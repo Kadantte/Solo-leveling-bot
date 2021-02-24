@@ -162,6 +162,6 @@ client.login(process.env.BOT_TOKEN)
 // ================= EXP CODE ===================
 
 // app.get('/', (req, res) => res.send('Bot is running!'))
-//app.listen(process.env.PORT || 5000, () => console.log(`Bot is listening at http://localhost:${port}`))
+// app.listen(process.env.PORT || 5000, () => console.log(`Bot is listening at http://localhost:${port}`))
 
 // ================= EXP CODE ===================
