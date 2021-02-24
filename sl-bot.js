@@ -34,13 +34,7 @@ let about = requireFile('about.js')
 let client = new discord.Client()
 
 const PREFIX = 'sl-'
-function envArray (name) {
-    const value = process.env[name]
-    if (!value) {
-      return null
-    }
-    return value.split(',').map(s => s.trim())
-  }
+
 const cmd = {
     START: 'start',
     STOP: 'stop',
@@ -155,7 +149,7 @@ function checkCommand(client, msg) {
 }
 
 function hasAccess(msg) {
-    if (msg.author.id = envArray('OWNERS')) {
+    if (msg.author.id != process.env.OWNER) {
         msg.channel.send('Some things are just not meant to be.')
         return false
     }
@@ -168,6 +162,6 @@ client.login(process.env.BOT_TOKEN)
 // ================= EXP CODE ===================
 
 // app.get('/', (req, res) => res.send('Bot is running!'))
-// app.listen(process.env.PORT || 5000, () => console.log(`Bot is listening at http://localhost:${port}`))
+//app.listen(process.env.PORT || 5000, () => console.log(`Bot is listening at http://localhost:${port}`))
 
 // ================= EXP CODE ===================
