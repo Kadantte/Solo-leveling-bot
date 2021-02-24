@@ -1,1 +1,1 @@
-worker: node index.js
+bot: node sl-bot.js

@@ -1,7 +1,7 @@
 // ================= EXP CODE ===================
-const express = require('express')
-const app = express()
-const port = 3000
+// const express = require('express')
+// const app = express()
+// const port = 3000
 
 // ================= EXP CODE ===================
 // ================= BOT CODE ===================
@@ -161,7 +161,7 @@ client.login(process.env.BOT_TOKEN)
 // ================= BOT CODE ===================
 // ================= EXP CODE ===================
 
-app.get('/', (req, res) => res.send('Bot is running!'))
-app.listen(process.env.PORT || 5000, () => console.log(`Bot is listening at http://localhost:${port}`))
+// app.get('/', (req, res) => res.send('Bot is running!'))
+// app.listen(process.env.PORT || 5000, () => console.log(`Bot is listening at http://localhost:${port}`))
 
 // ================= EXP CODE ===================
