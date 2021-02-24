@@ -155,7 +155,7 @@ function checkCommand(client, msg) {
 }
 
 function hasAccess(msg) {
-    if (msg.author.id != envArray('OWNERS')) {
+    if (msg.author.id = envArray('OWNERS')) {
         msg.channel.send('Some things are just not meant to be.')
         return false
     }
