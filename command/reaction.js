@@ -34,11 +34,11 @@ methods.showReaction = function(msg) {
     }
 }
 
-methods.sayNinoGang = function(msg) {
+methods.saySoloGang = function(msg) {
     if (!shouldReact()) {
         return
     }
-    msg.channel.send('Nino Gang!')
+    msg.channel.send('solo Gang!')
 }
 
 function shouldReact() {
