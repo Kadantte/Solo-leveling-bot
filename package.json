@@ -9,21 +9,21 @@
         "dev": "nodemon sl-bot.js"
     },
     "dependencies": {
-        "cheerio": "^1.0.0-rc.3",
+        "cheerio": "^1.0.0-rc.10",
         "cloudscraper": "^4.6.0",
         "cron": "^1.8.2",
         "discord.js": "^11.6.4",
-        "dotenv": "^8.2.0",
+        "dotenv": "^10.0.0",
         "express": "^4.17.1",
-        "firebase": "^7.24.0",
-        "jimp": "^0.14.0",
-        "node-fetch": "^2.6.1",
-        "pm2": "^4.5.0",
+        "firebase": "^9.0.2",
+        "jimp": "^0.16.1",
+        "node-fetch": "^3.0.0",
+        "pm2": "^5.1.1",
         "request": "^2.88.2",
         "request-promise": "^4.2.5",
         "sentiment": "^5.0.2"
     },
     "devDependencies": {
-        "nodemon": "^1.19.4"
+        "nodemon": "^2.0.12"
     }
 }
